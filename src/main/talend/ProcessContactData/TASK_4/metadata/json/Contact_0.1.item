@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_eihE8CpKEe6zrPhLZw7KWw" name="Contact" dataPackage="_eihE8ipKEe6zrPhLZw7KWw" JSONFilePath="C:/Users/Łukasz/Desktop/zadania_rekrutacyjne/statuses.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_eihE8SpKEe6zrPhLZw7KWw" LimitBoucle="50"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_eihE8ipKEe6zrPhLZw7KWw" name="default" dataManager="_eihE8CpKEe6zrPhLZw7KWw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eii6ICpKEe6zrPhLZw7KWw" id="_JxVVACpKEe6zrPhLZw7KWw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eii6ISpKEe6zrPhLZw7KWw" name="kontakt_id" label="kontakt_id" length="-1" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eii6IipKEe6zrPhLZw7KWw" name="klient_id" label="klient_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eii6IypKEe6zrPhLZw7KWw" name="pracownik_id" label="pracownik_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eii6JCpKEe6zrPhLZw7KWw" name="status" label="status" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eii6JSpKEe6zrPhLZw7KWw" name="kontakt_ts" label="kontakt_ts" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
