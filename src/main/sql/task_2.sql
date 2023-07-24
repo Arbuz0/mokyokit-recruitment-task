@@ -1,13 +1,13 @@
 SELECT
     klient_id,
     status
-FROM processed_statuses
+FROM statuses
 WHERE
     klient_id IN (
         SELECT klient_id
         FROM statuses
         GROUP BY klient_id
-        HAVING Count(*) > 3
+        HAVING Count(*) >= 3
     )
     AND (klient_id, kontakt_ts) IN (
         SELECT
